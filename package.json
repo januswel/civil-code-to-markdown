@@ -1,0 +1,22 @@
+{
+  "name": "civil-code-to-markdown",
+  "version": "1.0.0",
+  "description": "民法を Markdown に変換する",
+  "main": "index.js",
+  "scripts": {
+    "download": "curl \"https://laws.e-gov.go.jp/api/1/lawdata/129AC0000000089\" -o civil-code.xml",
+    "start": "npx ts-node ./index.ts"
+  },
+  "author": "Takagi Kensuke <janus.wel.3@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^22.0.2",
+    "@types/node": "^24.2.0",
+    "@types/xmldom": "^0.1.34",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
